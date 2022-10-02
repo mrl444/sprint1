@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html,  body, .wrapper{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font: 16px 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer{
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px;
+}
