@@ -221,11 +221,11 @@ header{
 
 /* Section */
 
-.section-about {
+.container-inner-about {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    width: 570px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section-title {
@@ -235,20 +235,73 @@ header{
 
 .section-about-lower,
 .section-about-upper {
-    font-weight: 400;
-    
+    font-weight: 400
 }
 
 .section-about-upper {
     font-size: 20px;
     line-height: 32px;
+    width: 570px;
 }
+
 .section-about-lower {
     font-size: 16px;
     line-height: 26px;
     width: 540px;
 }
 
-.section-actions {
-    justify-content: end;
+.video {
+    content: '';
+    background: url('./images/video-about.png');
+    width: 440px;
+    height: 296px;
+    border-radius: 8px;
+    margin-top: 190px;
+}
+
+/*Footer*/
+.footer {
+	font: 12px "Regular", sans-serif;
+}
+
+.footer-container {
+	max-width: 1110px;
+	min-height: 78px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-title span {
+	display: inline-block;
+	padding-bottom: 8px;
+}
+
+.footer-navigation ul {
+	margin: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.footer-navigation li:not(:last-child) {
+	margin-right: 28px;
+}
+
+.footer-title a {
+	color: #278aff;
+}
+
+.footer-title a:hover {
+	color: #083b79;
+}
+
+.footer-navigation a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.footer-navigation a:hover {
+	color: #000000;
 }
