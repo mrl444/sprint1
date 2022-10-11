@@ -249,20 +249,55 @@ header{
     width: 540px;
 }
 
-.video {
-    content: '';
-    background: url('./images/video-about.png');
-    width: 440px;
-    height: 296px;
+.video-box {
+    width: 443px;
+    height: 295px;
     border-radius: 8px;
-    margin-top: 190px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 91px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .20s;
 }
 
-.video:hover {
-    background: url('./images/video-about.png') , url ('./images/iconplay.png');
-    opacity: 80%;
+.video-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 20%;
 }
 
+.video-box:hover, .video-box__action {
+    transform: scale(1.05);
+}
+
+.video-box__action {
+    display: inline-block;
+    font-weight: 500;
+    color: #FFF;
+    position: relative;
+    top: 168px;
+    left: 131px;
+    right: 127px;
+    bottom: 101px;
+}
+
+.video-box__action:before {
+    content: '';
+    position: absolute;
+    left: 65px;
+    bottom: 32px;
+    background: url(./images/iconplay.png);
+    width: 60px;
+    height: 60px;
+}
 /*Footer*/
 
 .footer {
